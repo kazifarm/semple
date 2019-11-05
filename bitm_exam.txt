@@ -1,0 +1,21 @@
+
+
+BITM Betch-16
+PHP Laravel
+Group Name : Rest-People
+
+Name: Abdul alim
+SEIP_ID:256419
+E-mail: alim7675@gmail.com
+
+Name: Wasi Uddin
+SEIP_ID: 257410
+E-mail: wuddin73@gmail.com
+
+Name: Mohammadullah
+SEIP_ID: 257273
+E-mail: mahinhasan1484@gmail.com
+
+Name: Kazi Foysal Ahamed Mithun
+SEIP_ID: 256391
+E-mail: kfmithunahmed@gmail.com
