@@ -2862,7 +2862,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 .single-review img {
     margin-right: auto;
     margin-left: auto;
-    display: block
+    display: block;
+    border-radius: 50%;
 }
 
 .single-review h4 {
