@@ -2273,7 +2273,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .section-gap {
-    padding: 120px 0
+    padding: 120px 0;
+    
 }
 
 .alert-msg {
@@ -4201,6 +4202,9 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-weight: 300
 }
 
+
+
+
 /* start logo  */
 
 #logo {
@@ -4209,7 +4213,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #logo img {
     width: 22%;
-    margin-left: 100px;
+    margin-left: 130px;
 }
 
 /* END logo  */
@@ -4242,8 +4246,70 @@ body.mobile-nav-active #mobile-nav-toggle {
     float: left;
 }
 
+@media (max-width: 413px) {
+    #logo img {
+        width: 40%;
+        margin-left: -60px;
+    }
+
+}
+
+@media (min-width: 576px) { 
+
+    #logo img {
+        width: 110%;
+        margin-left: -120px;
+    }
+
+    .header_top_right{
+        margin-right: -330px;
+    }
+    .header_top_right .lrbtn{
+        margin-top: 10px;
+        font-size: 12px;
+    }
+    .header-top .send_email a p {
+        visibility: hidden;
+    }
+}
+
+@media (min-width: 768px) { 
+    
+    #logo img {
+        width: 40%;
+        margin-left: 90px;    
+    }
+
+    .header-top .send_email a p {
+        visibility: visible;
+    }
+ }
+
+ @media (min-width: 992px) { 
+    .header_top_right {
+        margin-right: -400px;
+    }
+    #logo img {
+        width: 30%;
+        margin-left: 170px;
+    }
+    .header_top_right .lrbtn {        
+        font-size: 16px;
+    }
+ }
+
+ @media (min-width: 1200px) {
+    .header_top_right {
+        margin-right: -700px;
+    }
+    #logo img {
+        width: 20%;
+        margin-left: 120px;
+    }
+ }
+
 /* Full-width input fields */
-.login_section input[type=text], input[type=password] 
+.login_section input[type=text], input[type=password] ,
 .reg_section input[type=text], input[type=password] {
   width: 100%;
   padding: 15px;
@@ -4254,7 +4320,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 /* Add a background color when the inputs get focus */
-.login_section input[type=text]:focus, input[type=password]:focus
+.login_section input[type=text]:focus, input[type=password]:focus,
 .reg_section input[type=text]:focus, input[type=password]:focus {
   background-color: #ddd;
   outline: none;
@@ -4278,29 +4344,30 @@ button:hover {
 } */
 
 /* Extra styles for the cancel button */
-.cancelbtn {
+#login .cancelbtn {
   padding: 14px 20px;
   background-color: #f44336;
 }
 
 /* Float cancel and signup buttons and add an equal width */
-.cancelbtn, .signupbtn {
+#login .cancelbtn,
+#login .signupbtn {
   float: left;
   width: 50%;
 }
 
 /* Add padding to container elements */
-.container {
+.header_top_right .container {
   padding: 16px;
 }
 
 /* The Modal (background) */
-.modal {
+.header_top_right .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   left: 0;
-  top: 100px;
+  top: 70px;
   width: 60%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
@@ -4310,7 +4377,7 @@ button:hover {
 }
 
 /* Modal Content/Box */
-.modal-content {
+.header_top_right .modal-content {
   background-color: #fefefe;
   margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
   border: 1px solid #888;
@@ -4318,13 +4385,13 @@ button:hover {
 }
 
 /* Style the horizontal ruler */
-hr {
+.header_top_right hr {
   border: 1px solid #f1f1f1;
   margin-bottom: 25px;
 }
  
 /* The Close Button (x) */
-.close {
+.header_top_right .close {
   position: absolute;
   right: 35px;
   top: 5px;
@@ -4333,26 +4400,35 @@ hr {
   color: black;
 }
 
-.close:hover,
-.close:focus {
+.header_top_right .close:hover,
+.header_top_right .close:focus {
   color: #f44336;
   cursor: pointer;
 }
 
 /* Clear floats */
-.clearfix::after {
+.header_top_right .clearfix::after {
   content: "";
   clear: both;
   display: table;
 }
-
+#login .btn,
+#reg .btn {
+    width: 40%;
+    padding: 10px;
+    font-size: 20px;
+    margin: 0px 0 10px 35px;
+}
+#reg .btn .cencle{
+  
+}
 /* Change styles for cancel button and signup button on extra small screens */
 @media screen and (max-width: 300px) {
-  .cancelbtn, .signupbtn {
+    .header_top_right .cancelbtn,
+    .header_top_right .signupbtn {
      width: 100%;
   }
 }
 
-
-
 /* END Login Registration css */
+

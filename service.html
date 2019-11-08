@@ -1,361 +1,387 @@
-	<!DOCTYPE html>
-	<html lang="zxx" class="no-js">
-	<head>
-		<!-- Mobile Specific Meta -->
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<!-- Favicon-->
-		<link rel="shortcut icon" href="img/fav.png">
-		
-		<!-- Meta Description -->
-		<meta name="description" content="">
-		<!-- Meta Keyword -->
-		<meta name="keywords" content="">
-		<!-- meta character set -->
-		<meta charset="UTF-8">
-		<!-- Site Title -->
-		<title>BITM Restaurant</title>
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
 
-		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
-			<!--
+<head>
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Favicon-->
+	<link rel="shortcut icon" href="img/fav.png">
+
+	<!-- Meta Description -->
+	<meta name="description" content="">
+	<!-- Meta Keyword -->
+	<meta name="keywords" content="">
+	<!-- meta character set -->
+	<meta charset="UTF-8">
+	<!-- Site Title -->
+	<title>BITM Restaurant</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+	<!--
 			CSS
 			============================================= -->
-			<link rel="stylesheet" href="css/linearicons.css">
-			<link rel="stylesheet" href="css/font-awesome.min.css">
-			<link rel="stylesheet" href="css/bootstrap.css">
-			<link rel="stylesheet" href="css/magnific-popup.css">
-			<link rel="stylesheet" href="css/jquery-ui.css">				
-			<link rel="stylesheet" href="css/nice-select.css">							
-			
+	<link rel="stylesheet" href="css/linearicons.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link rel="stylesheet" href="css/nice-select.css">
 
-			<link rel="stylesheet" href="css/owl.carousel.css">	
-	
-			<link href="css/swiper.min.css" rel="stylesheet" type="text/css">
-			<link href="css/animate.css" rel="stylesheet" type="text/css">				
 
-			<link rel="stylesheet" href="css/style2.css">
-			<link rel="stylesheet" href="css/style.css">
-		</head>
-		<body>	
-			<header id="header">
-				<div class="header-top">
-					<div class="container">
-						<div class="row justify-content-center">
-							<div class="col-md-6">
-								<div id="logo">
-									<a href="index.html"><img src="img/logo.png" alt="logo" /></a>
-								</div>
-							</div>
-							
-							<div class="col-md-6 header_top_right">
-								<div class="login_section">
-									<button class="btn btn-secondary"
-										onclick="document.getElementById('login').style.display='block'"
-										style="width:auto;">Login</button>
-		
-									<div id="login" class="modal">
-		
-										<form class="modal-content animate" action="/action_page.php" method="post">
-											<div class="container">
-												<span onclick="document.getElementById('login').style.display='none'"
-													class="close" title="Close Modal">&times;
-												</span>
-											</div>
-		
-											<div class="container">
-												<h1>Sign</h1>
-												<p>Please Sign in Your account.</p>
-												<hr>
-												<label for="uname"><b>Username</b></label>
-												<input type="text" placeholder="Enter Username" name="uname" required>
-		
-												<label for="psw"><b>Password</b></label>
-												<input type="password" placeholder="Enter Password" name="psw" required>
-		
-												<button type="submit">Login</button>
-												<label>
-													<input type="checkbox" checked="checked" name="remember"> Remember me
-												</label>
-											</div>
-		
-											<div class="container clearfix">
-												<button type="button"
-													onclick="document.getElementById('login').style.display='none'"
-													class="cancelbtn">Cancel</button>
-												<button type="submit" class="signupbtn">Forgot Password</button>
-											</div>
-										</form>
+	<link rel="stylesheet" href="css/owl.carousel.css">
+
+	<link href="css/swiper.min.css" rel="stylesheet" type="text/css">
+	<link href="css/animate.css" rel="stylesheet" type="text/css">
+
+	<link rel="stylesheet" href="css/style2.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+	<header id="header">
+		<div class="header-top">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-sm-3 col-md-6">
+						<div id="logo">
+							<a href="index.html"><img src="img/logo.png" alt="logo" /></a>
+						</div>
+					</div>
+
+					<div class="col-sm-3 col-md-6 header_top_right">
+						<div class="login_section">
+							<button class="btn btn-secondary lrbtn"
+								onclick="document.getElementById('login').style.display='block'"
+								style="width:auto;">Login
+							</button>
+
+							<div id="login" class="modal">
+
+								<form class="modal-content animate" action="/action_page.php" method="post">
+									<div class="container">
+										<span onclick="document.getElementById('login').style.display='none'"
+											class="close" title="Close Modal">&times;
+										</span>
 									</div>
-								</div>
-		
-								<div class="reg_section">
-									<button class="btn btn-secondary"
-										onclick="document.getElementById('reg').style.display='block'" style="width:auto;">Sign
-										Up</button>
-		
-									<div id="reg" class="modal">
-		
-										<form class="modal-content" action="/action_page.php">
-											<span onclick="document.getElementById('reg').style.display='none'" class="close"
-												title="Close Modal">&times;</span>
-											<div class="container">
-												<h1>Sign Up</h1>
-												<p>Please fill in this form to create an account.</p>
-												<hr>
-												<label for="email"><b>Email</b></label>
-												<input type="text" placeholder="Enter Email" name="email" required>
-		
-												<label for="psw"><b>Password</b></label>
-												<input type="password" placeholder="Enter Password" name="psw" required>
-		
-												<label for="psw-repeat"><b>Repeat Password</b></label>
-												<input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-		
-												<label>
-													<input type="checkbox" checked="checked" name="remember"
-														style="margin-bottom:15px"> Remember me
-												</label>
-		
-												<p>By creating an account you agree to our <a href="#"
-														style="color:dodgerblue">Terms & Privacy</a>.</p>
-		
-												<div class="clearfix">
-													<button type="button"
-														onclick="document.getElementById('reg').style.display='none'"
-														class="cancelbtn">Cancel</button>
-													<button type="submit" class="signupbtn">Sign Up</button>
-												</div>
-											</div>
-										</form>
+
+									<div class="container">
+										<h1>Sign</h1>
+										<p>Please Sign in Your account.</p>
+										<hr>
+										<label for="uname"><b>Username</b></label>
+										<input type="text" placeholder="Enter Username" name="uname" required>
+
+										<label for="psw"><b>Password</b></label>
+										<input type="password" placeholder="Enter Password" name="psw" required>
+										<label>
+											<input type="checkbox" checked="checked" name="remember"> Remember me
+										</label>
+
+										<button class="btn btn-primary" style="width: 86%" type="submit">Login</button>
+
 									</div>
-								</div>
-								<br><br><br>
-								<div class="send_email">
-									<a href="#">
-										<p>example@gmail.com</p>
-									</a>
-								</div>
+
+									<div class="container clearfix">
+										<button type="button"
+											onclick="document.getElementById('login').style.display='none'"
+											class="btn btn-danger">Cancel
+										</button>
+										<button type="submit" class="btn btn-secondary">Forgot Password</button>
+									</div>
+								</form>
 							</div>
+						</div>
+
+						<div class="reg_section">
+							<button class="btn btn-secondary lrbtn"
+								onclick="document.getElementById('reg').style.display='block'" style="width:auto;">Sign
+								Up</button>
+
+							<div id="reg" class="modal">
+
+								<form class="modal-content" action="/action_page.php">
+									<span onclick="document.getElementById('reg').style.display='none'" class="close"
+										title="Close Modal">&times;</span>
+									<div class="container">
+										<h1>Sign Up</h1>
+										<p>Please fill in this form to create an account.</p>
+										<hr>
+										<label for="email"><b>Email</b></label>
+										<input type="text" placeholder="Enter Email" name="email" required>
+
+										<label for="psw"><b>Password</b></label>
+										<input type="password" placeholder="Enter Password" name="psw" required>
+
+										<label for="psw-repeat"><b>Repeat Password</b></label>
+										<input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+										<label>
+											<input type="checkbox" checked="checked" name="remember"
+												style="margin-bottom:15px"> Remember me
+										</label>
+
+										<p>By creating an account you agree to our <a href="#"
+												style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+										<div class="clearfix">
+											<button type="button"
+												onclick="document.getElementById('reg').style.display='none'"
+												class="btn btn-danger">Cancel</button>
+											<button type="submit" class="btn btn-primary">Sign Up</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+						<br><br><br>
+						<div class="send_email">
+							<a href="#">
+								<p>example@gmail.com</p>
+							</a>
 						</div>
 					</div>
 				</div>
-		
-				<div class="container main-menu">
-					<div class="row align-items-center justify-content-center d-flex">
-						<nav id="nav-menu-container">
-							<ul class="nav-menu">
-								<li><a href="index.html">Home</a></li>
-								<li><a href="about.html">About</a></li>
-								<li><a href="menu.html">Menu</a></li>
-								<li><a href="gallery.html">Gallery</a></li>
-								<li><a href="service.html">Service</a></li>
-								<li><a href="blog-home.html">Blog</a></li>
-								<li><a href="contact.html">Contact</a></li>
-							</ul>
-						</nav><!-- #nav-menu-container -->
-					</div>
+			</div>
+		</div>
+
+		<div class="container main-menu">
+			<div class="row align-items-center justify-content-center d-flex">
+				<nav id="nav-menu-container">
+					<ul class="nav-menu">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="menu.html">Menu</a></li>
+						<li><a href="gallery.html">Gallery</a></li>
+						<li><a href="service.html">Service</a></li>
+						<li><a href="blog-home.html">Blog</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav><!-- #nav-menu-container -->
+			</div>
+		</div>
+
+	</header><!-- #header -->
+
+	<!-- start banner Area -->
+	<section class="about-banner relative">
+		<div class="overlay overlay-bg"></div>
+		<div class="container">
+			<div class="row d-flex align-items-center justify-content-center">
+				<div class="about-content col-lg-12">
+
+					<section class="wow lightSpeedIn" data-wow-duration="2s" data-wow-delay="1s">
+						<h1 style="color: white;">Services</h1>
+					</section>
+
+					<p class="text-white link-nav"><a href="index.html">Home </a> <span
+							class="lnr lnr-arrow-right"></span> <a href="service.html"> Services</a></p>
 				</div>
-		
-			</header><!-- #header -->
-			
-			<!-- start banner Area -->
-			<section class="about-banner relative">
-				<div class="overlay overlay-bg"></div>
-				<div class="container">				
-					<div class="row d-flex align-items-center justify-content-center">
-						<div class="about-content col-lg-12">
-							
-							<section class="wow lightSpeedIn" data-wow-duration="2s" data-wow-delay="1s">
-								<h1 style="color: white;">Services</h1>
-							</section>
-
-							<p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="service.html"> Services</a></p>
-						</div>	
-					</div>
-				</div>
-			</section>
-			<!-- End banner Area -->			
-
-			<!-- Start Service-area Area -->
-        <section class="ftco-section ftco-services">
-    	<div class="overlay"></div>
-    	<div class="container">
-    		<div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section ftco-animate text-center fadeInUp ftco-animated">
-            <section class="wow flipInX" data-wow-duration="2s" data-wow-delay="2s">
-        <h1> Our Services </h1>
-        </section>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-          </div>
-        </div>
-    		<div class="row">
-          <div class="col-md-4 ftco-animate fadeInUp ftco-animated">
-            <div class="media d-block text-center block-6 services">
-              <div class="icon d-flex justify-content-center align-items-center mb-5">
-              	<img src="img/service1.png" height="100" width="100" alt="">
-              </div>
-              <div class="media-body">
-                <h3 class="heading">Healthy Foods</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-              </div>
-            </div>      
-          </div>
-          <div class="col-md-4 ftco-animate fadeInUp ftco-animated">
-            <div class="media d-block text-center block-6 services">
-              <div class="icon d-flex justify-content-center align-items-center mb-5">
-              	<img src="img/service2.png" height="100" width="100" alt="">
-              </div>
-              <div class="media-body">
-                <h3 class="heading">Fastest Delivery</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-              </div>
-            </div>      
-          </div>
-          <div class="col-md-4 ftco-animate fadeInUp ftco-animated">
-            <div class="media d-block text-center block-6 services">
-              <div class="icon d-flex justify-content-center align-items-center mb-5">
-              	<img src="img/service3.png" height="100" width="100" alt="">
-              </div>
-              <div class="media-body">
-                <h3 class="heading">Original Recipes</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-              </div>
-            </div>    
-          </div>
-        </div>
-    	</div>
-    </section>
-            <!-- End Service-area Area -->		
-
-
-    <!--swiper js-->
-
-
-   
-<div id="Team" class="swiper-container ">
- 
-  <div class="text-center text-white">
-    <div class="fot-con">
-	<section class="wow bounceIn" data-wow-duration="2s" data-wow-delay="1s">
-	<h3 style="color:#db2f23" > Team  </h3>
+			</div>
+		</div>
 	</section>
-	<br>
-	<section class="wow bounceIn" data-wow-duration="2s" data-wow-delay="1s">
-        <h1> BEHIND THE TASTE </h1>
-        </section>  
-      </div>  
-		</div>
-  
-    <div class="swiper-wrapper">
-	
-	<div class="swiper-slide">
-	<section class="wow bounceIn" data-wow-duration="2s" data-wow-delay="1s">
-	    <div class="imgBx">
-		   <img src="img/chef5.jpeg">
-		</div></section>
-		<section class="wow bounceIn" data-wow-duration="2s" data-wow-delay="1s">
-		<div class="details text-center ">
-		  <h3>Bruce Burt</h3><p>Chief chef</p>
-		  <div class="fot-con">
-		  <div class="icon">
-               <a href="#"><i class="fa fa-facebook "></i></a>
-               <a href="#"><i class="fa fa-youtube  "></i></a>
-               <a href="#"><i class="fa fa-twitter "></i></a>
-               <a href="#"><i class="fa fa-trello "></i></a>
-          </div>
-		</div>
-		</div></section>
-	</div>
-	
-      <div class="swiper-slide">
-	  <section class="wow bounceIn" data-wow-duration="2s" data-wow-delay="2s">
-	    <div class="imgBx">
-		   <img src="img/chef1.jpeg">
-		</div></section>
-		<section class="wow bounceIn" data-wow-duration="2s" data-wow-delay="2s">
-		<div class="details text-center">
-		  <h3>Sam Claflin</h3><p>Assistant chef</p>
-		  <div class="fot-con">
-		  <div class="icon">
-               <a href="#"><i class="fa fa-facebook "></i></a>
-               <a href="#"><i class="fa fa-youtube  "></i></a>
-               <a href="#"><i class="fa fa-twitter "></i></a>
-               <a href="#"><i class="fa fa-trello "></i></a>
-          </div>
-		</div>
-		</div></section>
-	</div>
-	
-	<div class="swiper-slide">
-	  <section class="wow bounceIn" data-wow-duration="2s" data-wow-delay="2.5s">
-	    <div class="imgBx">
-		   <img src="img/chef2.jpeg">
-		</div></section>
-		<section class="wow bounceIn" data-wow-duration="2s" data-wow-delay="2.5s">
-		<div class="details text-center">
-		  <h3>Sofia Richie</h3><p>Chief chef</p>
-		  <div class="fot-con">
-		  <div class="icon">
-               <a href="#"><i class="fa fa-facebook "></i></a>
-               <a href="#"><i class="fa fa-youtube  "></i></a>
-               <a href="#"><i class="fa fa-twitter "></i></a>
-               <a href="#"><i class="fa fa-trello "></i></a>
-          </div>
-		</div>
-		</div></section>
-	</div>
-	
-	<div class="swiper-slide">
-	<section class="wow bounceIn" data-wow-duration="2s" data-wow-delay="3s">
-	    <div class="imgBx">
-		   <img src="img/chef3.jpeg">
-		</div></section>
-		<section class="wow bounceIn" data-wow-duration="2s" data-wow-delay="3s">
-		<div class="details text-center">
-		  <h3>Margaret</h3><p>Chief chef</p>
-		  <div class="fot-con">
-		  <div class="icon">
-               <a href="#"><i class="fa fa-facebook "></i></a>
-               <a href="#"><i class="fa fa-youtube  "></i></a>
-               <a href="#"><i class="fa fa-twitter "></i></a>
-               <a href="#"><i class="fa fa-trello "></i></a>
-          </div>
-		</div>
-		</div></section>
-	</div>
-	
-	<div class="swiper-slide">
-	<section class="wow bounceIn" data-wow-duration="2s" data-wow-delay="3.5s">
-	    <div class="imgBx">
-		   <img src="img/chef4.jpeg">
-		</div></section>
-		<section class="wow bounceIn" data-wow-duration="2s" data-wow-delay="3.5s">
-		<div class="details text-center">
-		  <h3>Emillia Clarke</h3><p>Assistant chef</p>
-		  <div class="fot-con">
-		  <div class="icon">
-               <a href="#"><i class="fa fa-facebook "></i></a>
-               <a href="#"><i class="fa fa-youtube  "></i></a>
-               <a href="#"><i class="fa fa-twitter "></i></a>
-               <a href="#"><i class="fa fa-trello "></i></a>
-          </div>
-		</div>
-		</div></section>
-	</div>
-	
-	
+	<!-- End banner Area -->
 
-    </div>	 
-    <!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
-  </div>
-  <br><br><br>
-  
-  
+	<!-- Start Service-area Area -->
+	<section class="ftco-section ftco-services">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-3">
+				<div class="col-md-7 heading-section ftco-animate text-center fadeInUp ftco-animated">
+					<section class="wow flipInX" data-wow-duration="2s" data-wow-delay="2s">
+						<h1> Our Services </h1>
+					</section>
+					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
+						live the blind texts.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 ftco-animate fadeInUp ftco-animated">
+					<div class="media d-block text-center block-6 services">
+						<div class="icon d-flex justify-content-center align-items-center mb-5">
+							<img src="img/service1.png" height="100" width="100" alt="">
+						</div>
+						<div class="media-body">
+							<h3 class="heading">Healthy Foods</h3>
+							<p>Even the all-powerful Pointing has no control about the blind texts it is an almost
+								unorthographic.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 ftco-animate fadeInUp ftco-animated">
+					<div class="media d-block text-center block-6 services">
+						<div class="icon d-flex justify-content-center align-items-center mb-5">
+							<img src="img/service2.png" height="100" width="100" alt="">
+						</div>
+						<div class="media-body">
+							<h3 class="heading">Fastest Delivery</h3>
+							<p>Even the all-powerful Pointing has no control about the blind texts it is an almost
+								unorthographic.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 ftco-animate fadeInUp ftco-animated">
+					<div class="media d-block text-center block-6 services">
+						<div class="icon d-flex justify-content-center align-items-center mb-5">
+							<img src="img/service3.png" height="100" width="100" alt="">
+						</div>
+						<div class="media-body">
+							<h3 class="heading">Original Recipes</h3>
+							<p>Even the all-powerful Pointing has no control about the blind texts it is an almost
+								unorthographic.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Service-area Area -->
 
-<!--end   swiper js-->			
 
-			<!-- start footer Area -->		
-			<footer class="footer-area">
+	<!--swiper js-->
+
+
+
+	<div id="Team" class="swiper-container ">
+
+		<div class="text-center text-white">
+			<div class="fot-con">
+				<section class="wow bounceIn" data-wow-duration="2s" data-wow-delay="1s">
+					<h3 style="color:#db2f23"> Team </h3>
+				</section>
+				<br>
+				<section class="wow bounceIn" data-wow-duration="2s" data-wow-delay="1s">
+					<h1> BEHIND THE TASTE </h1>
+				</section>
+			</div>
+		</div>
+
+		<div class="swiper-wrapper">
+
+			<div class="swiper-slide">
+				<section class="wow bounceIn" data-wow-duration="2s" data-wow-delay="1s">
+					<div class="imgBx">
+						<img src="img/chef5.jpeg">
+					</div>
+				</section>
+				<section class="wow bounceIn" data-wow-duration="2s" data-wow-delay="1s">
+					<div class="details text-center ">
+						<h3>Bruce Burt</h3>
+						<p>Chief chef</p>
+						<div class="fot-con">
+							<div class="icon">
+								<a href="#"><i class="fa fa-facebook "></i></a>
+								<a href="#"><i class="fa fa-youtube  "></i></a>
+								<a href="#"><i class="fa fa-twitter "></i></a>
+								<a href="#"><i class="fa fa-trello "></i></a>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+			<div class="swiper-slide">
+				<section class="wow bounceIn" data-wow-duration="2s" data-wow-delay="2s">
+					<div class="imgBx">
+						<img src="img/chef1.jpeg">
+					</div>
+				</section>
+				<section class="wow bounceIn" data-wow-duration="2s" data-wow-delay="2s">
+					<div class="details text-center">
+						<h3>Sam Claflin</h3>
+						<p>Assistant chef</p>
+						<div class="fot-con">
+							<div class="icon">
+								<a href="#"><i class="fa fa-facebook "></i></a>
+								<a href="#"><i class="fa fa-youtube  "></i></a>
+								<a href="#"><i class="fa fa-twitter "></i></a>
+								<a href="#"><i class="fa fa-trello "></i></a>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+			<div class="swiper-slide">
+				<section class="wow bounceIn" data-wow-duration="2s" data-wow-delay="2.5s">
+					<div class="imgBx">
+						<img src="img/chef2.jpeg">
+					</div>
+				</section>
+				<section class="wow bounceIn" data-wow-duration="2s" data-wow-delay="2.5s">
+					<div class="details text-center">
+						<h3>Sofia Richie</h3>
+						<p>Chief chef</p>
+						<div class="fot-con">
+							<div class="icon">
+								<a href="#"><i class="fa fa-facebook "></i></a>
+								<a href="#"><i class="fa fa-youtube  "></i></a>
+								<a href="#"><i class="fa fa-twitter "></i></a>
+								<a href="#"><i class="fa fa-trello "></i></a>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+			<div class="swiper-slide">
+				<section class="wow bounceIn" data-wow-duration="2s" data-wow-delay="3s">
+					<div class="imgBx">
+						<img src="img/chef3.jpeg">
+					</div>
+				</section>
+				<section class="wow bounceIn" data-wow-duration="2s" data-wow-delay="3s">
+					<div class="details text-center">
+						<h3>Margaret</h3>
+						<p>Chief chef</p>
+						<div class="fot-con">
+							<div class="icon">
+								<a href="#"><i class="fa fa-facebook "></i></a>
+								<a href="#"><i class="fa fa-youtube  "></i></a>
+								<a href="#"><i class="fa fa-twitter "></i></a>
+								<a href="#"><i class="fa fa-trello "></i></a>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+			<div class="swiper-slide">
+				<section class="wow bounceIn" data-wow-duration="2s" data-wow-delay="3.5s">
+					<div class="imgBx">
+						<img src="img/chef4.jpeg">
+					</div>
+				</section>
+				<section class="wow bounceIn" data-wow-duration="2s" data-wow-delay="3.5s">
+					<div class="details text-center">
+						<h3>Emillia Clarke</h3>
+						<p>Assistant chef</p>
+						<div class="fot-con">
+							<div class="icon">
+								<a href="#"><i class="fa fa-facebook "></i></a>
+								<a href="#"><i class="fa fa-youtube  "></i></a>
+								<a href="#"><i class="fa fa-twitter "></i></a>
+								<a href="#"><i class="fa fa-trello "></i></a>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+
+
+		</div>
+		<!-- Add Pagination -->
+		<div class="swiper-pagination"></div>
+	</div>
+	<br><br><br>
+
+
+
+	<!--end   swiper js-->
+
+	<!-- start footer Area -->
+	<footer class="footer-area">
 		<div class="footer-widget-wrap">
 			<div class="container">
 				<div class="row section-gap">
@@ -436,35 +462,25 @@
 			</div>
 		</div>
 	</footer>
-			<!-- End footer Area -->	
+	<!-- End footer Area -->
 
-			<script src="js/vendor/jquery-2.2.4.min.js"></script>
-			<script src="js/popper.min.js"></script>
-			<script src="js/vendor/bootstrap.min.js"></script>			
-			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>		
- 			<script src="js/jquery-ui.js"></script>					
-  			<script src="js/easing.min.js"></script>			
-			<script src="js/hoverIntent.js"></script>
-			<script src="js/superfish.min.js"></script>	
-			<script src="js/jquery.ajaxchimp.min.js"></script>
-			<script src="js/jquery.magnific-popup.min.js"></script>						
-			<script src="js/jquery.nice-select.min.js"></script>					
-			<script src="js/owl.carousel.min.js"></script>			
-            <script src="js/isotope.pkgd.min.js"></script>								
-			<script src="js/mail-script.js"></script>	
-			<script src="js/swiper.min.js"></script>
-			<script src="js/wow.min.js"></script>
-			<script src="js/main.js"></script>	
-		</body>
-	</html>
+	<script src="js/vendor/jquery-2.2.4.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/easing.min.js"></script>
+	<script src="js/hoverIntent.js"></script>
+	<script src="js/superfish.min.js"></script>
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/jquery.nice-select.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/isotope.pkgd.min.js"></script>
+	<script src="js/mail-script.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
 
-
-
-
-
-
-
-
-
-
-
+</html>
