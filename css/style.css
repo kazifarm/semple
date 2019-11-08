@@ -2371,7 +2371,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .banner-area {
-    background: url(../img/hero-bg.jpg) center center/cover;
+    background: url(../img/header/slider_4.jpg) center center/cover;
     background-size: cover
 }
 
@@ -2583,7 +2583,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .reservation-area {
-    background: url(../img/reservation-bg.jpg) no-repeat center/cover
+    background: url(../img/header/slider_2.jpg) no-repeat center/cover
 }
 
 .reservation-area .overlay-bg {
@@ -4025,8 +4025,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .icon {
     /*width: 240px;
-    height: 240px;*/
-    margin: 0 auto;
+    height: 240px;
+    margin: 0 auto; */
     position: relative;
     z-index: 0;
 }
@@ -4431,4 +4431,57 @@ button:hover {
 }
 
 /* END Login Registration css */
+
+
+
+/* Start Menu css */
+.rest_name.menu-active {
+    color: #2ecc71;
+}
+
+#nav-menu-container .nav-menu a {
+    font-size: 23px;
+    font-weight: 400;
+}
+
+/* #nav-menu-container .nav-menu a .rest_name{
+    color: #f1c40f;
+    background: white;
+} */
+.rest_name.menu-active {
+    
+}
+
+.rest_name p {
+    color: yellow;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.rest_name p:hover {
+    color: white;
+}
+
+
+
+
+/* END Menu css */
+
+
+
+/* Start Gallery css */
+
+#gallery img{
+    transition: 1s;
+    padding: 10px;
+}
+#gallery img:hover{
+    filter: grayscale(100%);
+    transform: scale(1.2);
+    z-index: 6;
+}
+
+
+/* Start Gallery css */
+
 

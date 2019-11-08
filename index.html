@@ -31,8 +31,11 @@
 	<!-- <link rel="stylesheet" href="css/animate.min.css"> -->
 	<link href="css/animate.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/lightbox.min.css">
 	<!-- <link rel="stylesheet" href="css/main.css"> -->
 	<link rel="stylesheet" href="css/style.css">
+
+	<script src="js/lightbox-plus-jquery.min.js"></script>
 </head>
 
 <body>
@@ -146,9 +149,9 @@
 			<div class="row align-items-center justify-content-center d-flex">
 				<nav id="nav-menu-container">
 					<ul class="nav-menu">
-						<li><a href="index.html">Home</a></li>
+						<li><a href="index.html" class="rest_name"><p>BITM Restaurant</p></a></li>
 						<li><a href="about.html">About</a></li>
-						<li><a href="menu.html">Menu</a></li>
+						<li><a href="menu.html">Food Menu</a></li>
 						<li><a href="gallery.html">Gallery</a></li>
 						<li><a href="service.html">Service</a></li>
 						<li><a href="blog-home.html">Blog</a></li>
@@ -355,11 +358,11 @@
 							onfocus="this.placeholder = ''" onblur="this.placeholder = 'Select Date & time'">
 						<div class="form-select" id="service-select">
 							<select>
-								<option data-display="">Select Event</option>
-								<option value="1">Event One</option>
-								<option value="2">Event Two</option>
-								<option value="3">Event Three</option>
-								<option value="4">Event Four</option>
+								<option data-display="">Select Booking</option>
+								<option value="1">Table Booking</option>
+								<option value="2">Food Boking</option>
+								<option value="3">Offer Booking</option>
+								<option value="4">Product Booking</option>
 							</select>
 						</div>
 						<button class="primary-btn text-uppercase mt-20">Make Reservation</button>
@@ -370,76 +373,82 @@
 	</section>
 	<!-- End reservation Area -->
 
+
+
 	<!-- Start gallery-area Area -->
-	<section class="gallery-area section-gap wow rotateIn" data-wow-duration="2s" data-wow-delay="1s" id="gallery">
-		<div class="container">
-			<div class="row d-flex justify-content-center">
-				<div class="menu-content pb-70 col-lg-8">
-					<div class="title text-center">
-						<h1 class="mb-10">Food and Customer Gallery</h1>
-						<p>Who are in extremely love with eco friendly system.</p>
-					</div>
-				</div>
-			</div>
-
-			<ul class="filter-wrap filters col-lg-12 no-padding">
-				<li class="active" data-filter="*">All Menu</li>
-				<li data-filter=".breakfast">Breakfast</li>
-				<li data-filter=".lunch">Lunch</li>
-				<li data-filter=".dinner">Dinner</li>
-				<li data-filter=".budget-meal">Desert</li>
-				<li data-filter=".buffet">Buffet</li>
-			</ul>
-
-
-			<div class="filters-content">
-				<div class="row grid">
-					<div class="col-lg-4 col-md-6 col-sm-6 all breakfast">
-						<div class="single-gallery">
-							<img class="img-fluid" src="img/bangla/chiken-tandoori.jpg" alt="">
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 col-sm-6 all dinner">
-						<div class="single-gallery">
-							<img class="img-fluid" src="img/bangla/beef-seek-kebab.jpg" alt="">
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 col-sm-6 all budget-meal">
-						<div class="single-gallery">
-							<img class="img-fluid" src="img/bangla/faluda-bangladeshi.jpg" alt="">
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 col-sm-6 all breakfast">
-						<div class="single-gallery">
-							<img class="img-fluid" src="img/bangla/sheek-kabab-bangladeshi.jpg" alt="">
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 col-sm-6 all lunch">
-						<div class="single-gallery">
-							<img class="img-fluid" src="img/bangla/beef-tehari.jpg" alt="">
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 col-sm-6 all buffet">
-						<div class="single-gallery">
-							<img class="img-fluid" src="img/bangla/luchi.jpg" alt="">
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 col-sm-6 all buffet">
-						<div class="single-gallery">
-							<img class="img-fluid" src="img/bangla/haleem-bangladeshi.jpg" alt="">
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 col-sm-6 all buffet">
-						<div class="single-gallery">
-							<img class="img-fluid" src="img/bangla/misti-doi-bangladeshi.jpg" alt="">
+	<section class="gallery-area section-gap wow fadeInDown" data-wow-duration="2s" data-wow-delay="1s" id="gallery">
+			<div class="container">
+				<div class="row d-flex justify-content-center">
+					<div class="menu-content pb-70 col-lg-8">
+						<div class="title text-center">
+							<h1 class="mb-10">Food and Customer Gallery</h1>
+							<p>Who are in extremely love with eco friendly system.</p>
 						</div>
 					</div>
 				</div>
+	
+				<ul class="filter-wrap filters col-lg-12 no-padding">
+					<li class="active" data-filter="*">All Menu</li>
+					<li data-filter=".breakfast">Breakfast</li>
+					<li data-filter=".lunch">Lunch</li>
+					<li data-filter=".dinner">Dinner</li>
+					<li data-filter=".budget-meal">Desert</li>
+					<li data-filter=".buffet">Buffet</li>
+				</ul>
+	
+	
+				<div class="filters-content">
+					<div class="row grid">
+						<div class="col-lg-4 col-md-6 col-sm-6 all breakfast">
+							<a href="img/bangla/chiken-tandoori.jpg" class="single-gallery" data-lightbox="mygallery" data-title="this is image">
+								<img class="img-fluid" src="img/bangla/chiken-tandoori.jpg" alt="">
+							</a>
+						</div>
+						
+						<div class="col-lg-4 col-md-6 col-sm-6 all dinner">
+							<a href="img/bangla/beef-seek-kebab.jpg" class="single-gallery" data-lightbox="mygallery">
+								<img class="img-fluid" src="img/bangla/beef-seek-kebab.jpg" alt="">
+							</a>
+						</div>
+						
+						<div class="col-lg-4 col-md-6 col-sm-6 all budget-meal">
+							<a href="img/bangla/faluda-bangladeshi.jpg" class="single-gallery" data-lightbox="mygallery">
+								<img class="img-fluid" src="img/bangla/faluda-bangladeshi.jpg" alt="">
+							</a>
+						</div>
+						
+						<div class="col-lg-4 col-md-6 col-sm-6 all breakfast">
+							<a href="img/bangla/sheek-kabab-bangladeshi.jpg" class="single-gallery" data-lightbox="mygallery">
+								<img class="img-fluid" src="img/bangla/sheek-kabab-bangladeshi.jpg" alt="">
+							</a>
+						</div>
+						
+						<div class="col-lg-4 col-md-6 col-sm-6 all lunch">
+							<a href="img/bangla/beef-tehari.jpg" class="single-gallery" data-lightbox="mygallery">
+								<img class="img-fluid" src="img/bangla/beef-tehari.jpg" alt="">
+							</a>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 all buffet">
+							<a href="img/bangla/luchi.jpg" class="single-gallery" data-lightbox="mygallery">
+								<img class="img-fluid" src="img/bangla/luchi.jpg" alt="">
+							</a>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 all buffet">
+							<a href="img/bangla/haleem-bangladeshi.jpg" class="single-gallery" data-lightbox="mygallery">
+								<img class="img-fluid" src="img/bangla/haleem-bangladeshi.jpg" alt="">
+							</a>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 all buffet">
+							<a href="img/bangla/misti-doi-bangladeshi.jpg" class="single-gallery" data-lightbox="mygallery">
+								<img class="img-fluid" src="img/bangla/misti-doi-bangladeshi.jpg" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+	
 			</div>
-
-		</div>
-	</section>
-	<!-- End gallery-area Area -->
+		</section>
+		<!-- End gallery-area Area -->
 
 	<!-- Start review Area -->
 	<section class="review-area section-gap wow rotateIn" data-wow-duration="2s" data-wow-delay="1s">
@@ -711,6 +720,7 @@
 	<script src="js/mail-script.js"></script>
 	<script src="js/swiper.min.js"></script>
 	<script src="js/wow.min.js"></script>
+
 	<!-- <script src="js/script.js"></script> -->
 	<script src="js/main.js"></script>
 
