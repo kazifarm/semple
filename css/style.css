@@ -4440,9 +4440,14 @@ button:hover {
 }
 
 #nav-menu-container .nav-menu a {
-    font-size: 23px;
+    font-size: 18px;
     font-weight: 400;
 }
+
+/* #nav-menu-container .nav-menu a:hover {
+    border-bottom: 1px solid red;
+    padding-bottom: 10px;
+} */
 
 /* #nav-menu-container .nav-menu a .rest_name{
     color: #f1c40f;
@@ -4453,10 +4458,9 @@ button:hover {
 }
 
 .rest_name p {
-    color: yellow;
-    font-size: 30px;
-    letter-spacing: 2px;
-    font-weight: bold;
+    color: yellowgreen;
+    font-size: 24px;
+    font-weight: 900;
 }
 .rest_name p:hover {
     color: white;
